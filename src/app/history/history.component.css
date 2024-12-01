@@ -1,0 +1,78 @@
+/* General container styling */
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Title styling */
+  h2.display-4 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #007bff; /* Primary blue color */
+    margin-bottom: 30px;
+  }
+  
+  /* Card styling */
+  .card {
+    border: none;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Card body */
+  .card-body {
+    padding: 20px;
+  }
+  
+  /* List group styling */
+  .list-group-item {
+    font-size: 1.1rem;
+    padding: 10px;
+    border: none;
+    background-color: #ffffff;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect for list items */
+  .list-group-item:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Button styling */
+  .btn-lg {
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    background-color: #6c757d; /* Secondary gray color */
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Button hover effect */
+  .btn-lg:hover {
+    background-color: #5a6268;
+  }
+  
+  /* Margin adjustments for top section */
+  .mt-5 {
+    margin-top: 3rem;
+  }
+  
+  .mt-3 {
+    margin-top: 1.5rem;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 767px) {
+    .container {
+      padding: 10px;
+    }
+  
+    h2.display-4 {
+      font-size: 2rem;
+    }
+  }
+  

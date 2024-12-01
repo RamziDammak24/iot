@@ -1,0 +1,21 @@
+<div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8 text-center">
+        <h2 class="display-4 text-primary">Historique des Actions de la LED</h2>
+        <div class="card shadow-lg">
+          <div class="card-body">
+            <ul class="list-group">
+              <li *ngFor="let action of ledHistory" class="list-group-item">
+                {{ action.date }} - {{ action.action }}
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Bouton pour revenir à la page d'accueil -->
+        <button class="btn btn-lg btn-secondary mt-3" (click)="goHome()">
+          Retour à l'Accueil
+        </button>
+      </div>
+    </div>
+  </div>
+  

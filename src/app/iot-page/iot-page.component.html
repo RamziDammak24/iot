@@ -1,0 +1,29 @@
+<div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-6 text-center">
+        <h2 class="display-4 text-primary">Système de Contrôle des LED Basé sur le Web</h2>
+        <div class="card shadow-lg">
+          <div class="card-body">
+            <h5 class="card-title">État de la LED : {{ ledState }}</h5>
+            
+            <img [src]="'assets/' + (ledState === 'ON' ? 'ON.png' : 'OFF.png')" alt="État de la LED" class="img-fluid rounded-circle mb-4" style="max-width: 200px;">
+      
+            <button class="btn btn-lg btn-primary mt-3" (click)="toggleLED()">
+              {{ ledState === 'ON' ? 'Éteindre' : 'Allumer' }} la LED
+            </button>
+  
+            <!-- Bouton pour naviguer vers l'historique -->
+            <button class="btn btn-lg btn-info mt-3" (click)="goToHistory()">
+              Voir l'historique
+            </button>
+    
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <footer class="mt-5 text-center">
+      <p class="text-muted">Libéré par <strong>Ramzi Dammak</strong> et <strong>Ahmed Belguith</strong></p>
+    </footer>
+  </div>
+  
